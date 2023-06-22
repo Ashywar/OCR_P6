@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustStreamIt</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!--Header -->
+    <header class="header">
+        <div class="header__title">
+            <img src="https://user-images.githubusercontent.com/55999192/113331185-78107a80-92d4-11eb-9078-3f33832c7631.png"
+                alt="" class="" />
+        </div>
+        <nav>
+            <ul class="header__menu">
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="#cat1__title">
+                    <li>Categories</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Best Movie section -->
+    <section class="section">
+        <div class="best-movie">
+            <div class="best-movie__header">
+                <h1 id="best__title">#</h1>
+                <p id="best__description" class="best-movie__description"></p>
+                <button id="play">Play</button>
+                <button id="info">Info</button>
+            </div>
+            <div class="best-movie__img">
+                <img id="best__img" src="#" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Best rating section -->
+    <section class="best-rating">
+        <div class="best-rating__title">
+            <h1>Best Rating Movies</h1>
+        </div>
+        <div class="section__carousel">
+            <div class="section__arrow left--arrow">
+                &lsaquo;
+            </div>
+            <div id="best-rating__carousel" class="carousel">
+            </div>
+            <div class="section__arrow right--arrow">
+                &rsaquo;
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORY 1 -->
+    <section class="category">
+        <div class="section__title" id="cat1__title">
+            <h1>Comedy</h1>
+        </div>
+        <div class="section__carousel">
+            <div class="section__arrow left--arrow">
+                &lsaquo;
+            </div>
+            <div id="first_category__carousel" class="carousel">
+            </div>
+            <div class="section__arrow right--arrow">
+                &rsaquo;
+            </div>
+    </section>
+
+    <!-- CATEGORY 2 -->
+    <section class="category">
+        <div class="section__title" id="cat2__title">
+            <h1>Drama</h1>
+        </div>
+        <div class="section__carousel">
+            <div class="section__arrow left--arrow">
+                &lsaquo;
+            </div>
+            <div id="second-category__carousel" class="carousel">
+            </div>
+            <div class="section__arrow right--arrow">
+                &rsaquo;
+            </div>
+        </div>
+
+    </section>
+    <!-- CATEGORY 3 -->
+    <section class="category">
+        <div class="section__title" id="cat3__title">
+            <h1>Thriller</h1>
+        </div>
+        <div class="section__carousel">
+            <div class="section__arrow left--arrow">
+                &lsaquo;
+            </div>
+            <div id="third-category__carousel" class="carousel">
+            </div>
+            <div class="section__arrow right--arrow">
+                &rsaquo;
+            </div>
+        </div>
+    </section>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-content__close">&times;</span>
+            <div class="modal-content__text">
+                <div class="modal-content__img">
+                    <img id="modal__img" src="#" alt="" />
+                </div>
+                <div class="modal-content__data">
+                    <h1 id="modal__title">#</h1>
+                    <div><b>Genres:</b> <span id="modal__genres"></span></div>
+                    <div><b>Published:</b> <span id="modal__date_published"></span></div>
+                    <div><b>Rating: </b><span id="modal__avg_vote"></span></div>
+                    <div><b>IMDB score: </b><span id="modal__imdb_score"></span></div>
+                    <div><b>Directors:</b> <span id="modal__directors"></span></div>
+                    <div><b>Actors: </b><span id="modal__actors"></span></div>
+                    <div><b>Duration: </b><span id="modal__duration"></span> mins</div>
+                    <div><b>Countries: </b><span id="modal__countries"></span></div>
+                    <div><b>Box Office: </b><span id="modal__worldwide_gross_income"></span> $</div>
+                    <div><b>Description: </b><span id="modal__description"></span></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+/* General*/
+body {
+  width: 64em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.9375em;
+  line-height: 1;
+  font-family: "Open Sans", sans-serif;
+  color: #202124;
+}
+/*Link */
+a:link,
+a:visited {
+  color: #202124;
+  text-decoration: none;
+  cursor: auto;
+}
+a:link:active,
+a:visited:active {
+  color: #202124;
+}
+/* The Header */
+.header {
+  display: flex;
+  height: 6.25em;
+  padding: 1.875em;
+  margin: auto;
+  background-color: rgb(127, 138, 153);
+  border-radius: 0.625em;
+}
+.header img {
+  width: 10em;
+}
+.header nav {
+  color: black;
+  padding-left: 9.375em;
+  padding-top: 2.125em;
+  flex-grow: 1;
+  font-size: x-large;
+}
+ul.header__menu li {
+  margin-right: 5em;
+  display: inline-block;
+  list-style: none;
+  cursor: pointer;
+}
+/* Best Movie Section */
+.section {
+  max-width: 44em;
+  justify-content: center;
+  display: flex;
+  padding: 0.625em;
+  border: solid 0.1875em rgb(127, 138, 153);
+  margin: 1.875em auto;
+  border-radius: 0.625em;
+}
+.best-movie {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.best-movie__header {
+  max-width: 36em;
+}
+.best-movie__img {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* the Button INFO */
+button {
+  border: none;
+  border-radius: 0.9375em;
+  background-color: rgb(127, 138, 153);
+  color: white;
+  padding: 0.1875em 1.25em;
+  margin: 0.1875em;
+  width: auto;
+  height: 1.875em;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 1.1875em;
+}
+button:hover {
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+  color: rgb(255, 38, 0);
+  font-size: 1.1875em;
+  transform: scale(1.1);
+}
+#play {
+  background-color: rgb(255, 38, 0);
+}
+#play:hover {
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+  color: rgb(255, 38, 0);
+  font-size: 1.1875em;
+  transform: scale(1.1);
+}
+/* CATEGORIES */
+.best-rating__title,
+.section__title,
+.section__carousel {
+  display: flex;
+  justify-content: center;
+}
+.carousel__img {
+  border-radius: 0.1875em;
+  flex-grow: 1;
+  transition: 200ms all;
+  cursor: pointer;
+}
+.carousel__img:hover {
+  transform: scale(1.2);
+}
+
+/* The Arrows */
+.section__arrow {
+  display: flex;
+  align-items: center;
+  font-size: 3.75em;
+  color: #000;
+  padding: 0.625em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 250ms all;
+}
+.section__arrow:hover {
+  transform: scale(1.5);
+}
+/* The Modal box */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.623);
+}
+/* The Modal content */
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 0.9375em;
+  border-radius: 0.625em;
+  max-width: 80%;
+}
+.modal-content__text {
+  justify-content: space-around;
+  display: flex;
+}
+.modal-content__img {
+  max-width: 100%;
+  margin: auto;
+}
+.modal-content__data {
+  max-width: 70%;
+  margin: auto;
+  text-align: center;
+}
+/* The Close Button */
+.modal-content__close {
+  color: rgb(127, 138, 153);
+  float: right;
+  font-size: 1.75em;
+  font-weight: bold;
+}
+.modal-content__close:hover {
+  color: #000;
+  cursor: pointer;
+}
+.modal-content__close:focus {
+  color: #000;
+  cursor: pointer;
+}
