@@ -163,6 +163,10 @@ button:hover {
   margin: auto;
   text-align: center;
 }
+.modal-content__data div {
+  text-align: left;
+  line-height: 1.2;
+}
 /* The Close Button */
 .modal-content__close {
   color: rgb(127, 138, 153);
